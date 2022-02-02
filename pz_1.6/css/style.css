@@ -8,7 +8,6 @@ body{
     padding: 0;
     width: 100%;
     height: 100%;
-    /*background-color: aqua;*/
 }
 
 
@@ -51,10 +50,6 @@ body{
     width: 200px;
     margin-left: 20px;
 }
-p{
-    color: #fff;
-    margin-top: 0;
-}
 .link{
     text-decoration: none;
     color: #fff;
@@ -75,7 +70,6 @@ p{
     margin-top: 20px;
 
 }
-/*Футер*/
 .footer{
     margin: 0;
     padding: 0;
@@ -103,7 +97,6 @@ p{
 .form_main{
     min-height: 600px;
     margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
     padding: 80px;
@@ -128,7 +121,6 @@ p{
     padding-top: 25px;
     font-size: 20px;
     font-weight: 500;
-    /* padding: 0; */
 }
 .label_wrapper{
     display: flex;
@@ -179,4 +171,61 @@ p{
 }
 .form-git-commands a{
     text-decoration: none;
+}
+.container-git{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.container-create-p1 p{
+    color: black;
+}
+
+.container-observe p{
+    color: black;
+}
+.container-create{
+    min-width: 300px;
+    float: left;
+}
+.container-branch{
+    min-width: 300px;
+}
+.container-change{
+    min-width: 300px;
+}
+.container-synchronize{
+    min-width: 300px;
+}
+.container-create h2{
+    color: deepskyblue;
+}
+.container-git p{
+    margin-bottom: 5px;
+}
+.container-branch h2{
+    color: #3df138;
+}
+.container-change h2{
+    color: #00f10c;
+}
+.container-synchronize h2{
+    color: #f1220c;
+}
+.container-synchronize a{
+    text-decoration: none;
+    color: #0058fc;
+}
+.container-synchronize-link{
+    margin-top: 10px;
+}
+.container .content1 h2{
+    color: white;
+    margin-top: 0;
+}
+.footer p{
+    color: white;
+
 }
