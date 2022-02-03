@@ -10,7 +10,8 @@ function isPrime(num){
     return num;
 }
 for(let num = 2; num <= 100; num++){
-    console.log(isPrime(num))
+    console.log(isPrime(num));
 }
+
 
 
