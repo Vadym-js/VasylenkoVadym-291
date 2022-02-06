@@ -1,3 +1,2 @@
-let s = 0;
-let f = 9;
-for (s,f; s <= f; console.log(s++)){}
+for (let i = 0; i <= 9; console.log(i++)) {
+}
