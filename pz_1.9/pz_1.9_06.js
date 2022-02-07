@@ -1,4 +1,4 @@
-let month = window.prompt("Виберіть пору року",[1]);
+let month = window.prompt("Виберіть місяц року",[1]);
 if (month){
     if (month == 1){
         alert("Січень це зима");
