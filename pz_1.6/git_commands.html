@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Git commands</title>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="content1">
+            <h1>Мій особистий блог</h1>
+            <h2>Василенко Вадим</h2>
+        </div>
+        <div class="content2">
+            <a class="link" href="login.html">Вхід</a>
+            <a class="link" href="login.html">Реєстрація</a>
+        </div>
+    </div>
+</div>
+<div class="git-commands">
+    <div class="container-git">
+        <div class="container-create">
+            <h2>Create a Repository</h2>
+            <div class="container-create-p1">
+                <p>From scrath -- Create a new local repository</p>
+                <span><b>$ git init [project name]</b></span>
+            </div>
+            <div class="container-create-p1">
+                <p>Download from an existing repository</p>
+                <span><b>$ git clone my_url</b></span>
+            </div>
+            <div class="container-observe">
+                <h2>Observe your Repository</h2>
+                <div class="container-observe-p1">
+                    <p>List new or modifield files not yet <br>
+                        committed</p>
+                    <span><b>$ git status</b></span>
+                </div>
+                <div class="container-observe-p2">
+                    <p>Show the changes to staged</p>
+                    <span><b>$ git diff</b></span>
+                </div>
+                <div class="container-observe-p3">
+                    <p>Show all staged and unstaged files</p>
+                    <span><b>$ git diff --cached</b></span>
+                </div>
+                <div class="container-observe-p4">
+                    <p>Show all staged and unstaged <br> file changes</p>
+                    <span><b>$ git diff HEAD</b></span>
+                </div>
+                <div class="container-observe-p5">
+                    <p>Show the changes between two commit: ids</p>
+                    <span><b>$ git diff commit1 commit2</b></span>
+                </div>
+                <div class="container-observe-p6">
+                    <p>List the changes dates and authors <br>for a file</p>
+                    <span><b>$ git blame [file]</b></span>
+                </div>
+                <div class="container-observe-p7">
+                    <p>Show the file changes for a commit <br> id and/for file </p>
+                    <span><b>$ git show [commit]:[file]</b></span>
+                </div>
+                <div class="container-observe-p8">
+                    <p>Show full changes history</p>
+                    <span><b>$ git log</b></span>
+                </div>
+                <div class="container-observe-p9">
+                    <p>Show change history for file inclucing dffs</p>
+                    <span><b>$ git log -p [file/directory]</b></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-branch">
+            <h2>Working with Branches</h2>
+            <div class="container-branch-p1">
+                <div class="container-branch-p1-subtitle">
+                    <p>List all local branches</p>
+                    <span><b>$ git  branch</b></span>
+                </div>
+            </div>
+            <div class="container-branch-p1">
+                <div class="container-branch-p1-subtitle">
+                    <p>List all branches, local and remove</p>
+                    <span><b>$ git branch -av</b></span>
+                </div>
+            </div>
+            <div class="container-branch-p1">
+                <div class="container-branch-p1-subtitle">
+                    <p>Swith to a branch, my_branch, and update working directory</p>
+                    <span><b>$ git checkout my_branch</b></span>
+                </div>
+            </div>
+            <div class="container-branch-p1">
+                <div class="container-branch-p1-subtitle"> my_branch
+                    <p>Create a new branch called new_branch</p>
+                    <span><b>$ git branch new_branch</b></span>
+                </div>
+            </div>
+            <div class="container-create-p1">
+                <div class="container-branch-p1-subtitle">
+                    <p>Delete the branch called my_branch</p>
+                    <span><b>$ git branch -d my_branch</b></span>
+                </div>
+            </div>
+            <div class="container-create-p1">
+                <div class="container-branch-p1-subtitle">
+                    <p>Merge branch_a into branch_b</p>
+                    <span><b>$ git checkout branch_b</b></span>
+                    <span><b>$ git merge branch_a</b></span>
+                </div>
+            </div>
+            <div class="container-create-p1">
+                <div class="container-branch-p1-subtitle">
+                    <p>Tag the current commit</p>
+                    <span><b>$ git tag my_tag</b></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-change">
+            <h2>Make a Chenge</h2>
+            <div class="container-change-subtitle">
+                <p>Stages the file, ready for commit</p>
+                <span><b>$ git add [file]</b></span>
+            </div>
+            <div class="container-change-subtitle">
+                <p>Stage all changes files, ready for commit</p>
+                <span><b>$ git add</b></span>
+            </div>
+            <div class="container-change-subtitle">
+                <p>Stages the file, ready for commit</p>
+                <span><b>$ git add [file]</b></span>
+            </div>
+            <div class="container-change-subtitle">
+                <p>Commit all stages file to versioned history</p>
+                <span><b>$ git commit -m "commit massage"</b></span>
+            </div>
+            <div class="container-change-subtitle">
+                <p>Commit all your tracked files to versioned history</p>
+                <span><b>$ git commit -an "commit massage"</b></span>
+            </div>
+            <div class="container-change-subtitle">
+                <p>Revert everything to the last commit</p>
+                <span><b>$ git reset --hard</b></span>
+            </div>
+        </div>
+        <div class="container-synchronize">
+            <h2>Synchronize</h2>
+            <div class="container-synchronize-subtitle">
+                <p>Get the latest chenges from origin (no marge</p>
+                <span><b>$ git  fetch</b></span>
+            </div>
+            <div class="container-synchronize-subtitle">
+                <p>Fetch the latest changes from origin and marge</p>
+                <span><b>$ git pull</b></span>
+            </div>
+            <div class="container-synchronize-subtitle">
+                <p>Fetch the latest changes from origin and rebase</p>
+                <span><b>$ git pull --rebase</b></span>
+            </div>
+            <div class="container-synchronize-subtitle">
+                <p>Push local changes to the origin</p>
+                <span><b>$ git push</b></span>
+            </div>
+            <h2>Finally</h2>
+            <div class="container-synchronize-subtitle">
+                <p>When in douth, use git help</p>
+                <span><b>$ git command --help</b></span>
+            </div>
+            <div class="container-synchronize-link">
+                <span>Or visit <a href="https://training.github.com">https://training.github.com</a>
+                    for official GitHub training
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="content">
+        <div class="footer_content1">
+            <p>&copy; Всі права захищенні</p>
+        </div>
+        <div class="footer_content2">
+            Розробив: курсант 291 групи солдат Василенко В.В
+        </div>
+    </div>
+</div>
+</body>
+</html>
